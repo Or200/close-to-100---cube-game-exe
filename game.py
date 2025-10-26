@@ -1,9 +1,9 @@
 from utils import *
 
-def closer_to_target(a: int, b: int, target: int = 100) -> int | None:
-    if target - a < target - b:
+def closer_to_target(Player_1_score: int, Player_2_score: int, target: int = 100) -> int | None:
+    if target - Player_1_score < target - Player_2_score:
         return 1
-    elif target - a > target - b:
+    elif target - Player_1_score > target - Player_2_score:
         return 2
     else:
         return
